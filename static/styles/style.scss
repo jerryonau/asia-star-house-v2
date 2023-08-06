@@ -1,0 +1,53 @@
+@import "variables";
+
+:root {
+  --blue: #{inspect($blue)};
+  --indigo: #{inspect($indigo)};
+  --purple: #{inspect($purple)};
+  --pink: #{inspect($pink)};
+  --red: #{inspect($red)};
+  --orange: #{inspect($orange)};
+  --yellow: #{inspect($yellow)};
+  --green: #{inspect($green)};
+  --teal: #{inspect($teal)};
+  --cyan: #{inspect($cyan)};
+  --white: #{inspect($white)};
+  --gray: #{inspect($gray)};
+  --gray-dark: #{inspect($gray-dark)};
+  --primary: #{inspect($primary)};
+  --bs-primary: #{inspect($primary)};
+  --secondary: #{inspect($secondary)};
+  --success: #{inspect($success)};
+  --info: #{inspect($info)};
+  --warning: #{inspect($warning)};
+  --danger: #{inspect($danger)};
+  --light: #{inspect($light)};
+  --dark: #{inspect($dark)};
+  --breakpoint-xs: #{inspect($breakpoint-xs)};
+  --breakpoint-sm: #{inspect($breakpoint-sm)};
+  --breakpoint-md: #{inspect($breakpoint-md)};
+  --breakpoint-lg: #{inspect($breakpoint-lg)};
+  --breakpoint-xl: #{inspect($breakpoint-xl)};
+  --font-family-base: #{inspect($font-family-base)};
+  --font-family-sans-serif: #{inspect($font-family-sans-serif)};
+  --font-family-monospace: #{inspect($font-family-monospace)};
+}
+@import "./modules/fonts";
+@import "./modules/normalize";
+@import "./modules/resets";
+@import "./modules/body";
+@import "./modules/loading";
+@import "./modules/typography";
+@import "./modules/text";
+@import "./modules/link";
+@import "./modules/img";
+@import "./modules/button";
+@import "./modules/form";
+@import "./modules/swiper";
+@import "./modules/list";
+@import "./modules/header";
+@import "./modules/section";
+@import "./modules/footer";
+
+@import "./pages/home/index";
+@import "./pages/about/index";

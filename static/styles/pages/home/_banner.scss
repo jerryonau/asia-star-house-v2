@@ -1,0 +1,40 @@
+.section {
+  &-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/home/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      span {
+        color: $primary;
+      }
+    }
+    h3 {
+      color: #fff;
+      font-family: "Playfair Display", serif;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    &-banner {
+      text-align: center;
+      h1 {
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+}

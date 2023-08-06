@@ -1,0 +1,82 @@
+.section {
+  &-about {
+    background-image: url(../images/home/section-about-bg.jpg);
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 25px;
+
+        &::before {
+          position: absolute;
+          top: 2px;
+          left: 0;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 400;
+          content: "\f058";
+          color: $primary;
+        }
+      }
+    }
+
+    &-img {
+      transition: $all-transitions;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        width: 60px;
+        height: 60px;
+        border: 5px solid $primary;
+        transition: $all-transitions;
+      }
+
+      &::before {
+        top: 20px;
+        left: 20px;
+        border-bottom: none;
+        border-right: none;
+      }
+
+      &::after {
+        bottom: 20px;
+        right: 20px;
+        border-top: none;
+        border-left: none;
+      }
+
+      img {
+        position: relative;
+        z-index: 1;
+        border: 4px solid rgba($color: $white, $alpha: 0.2);
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        &::before {
+          top: 10px;
+          left: 10px;
+        }
+
+        &::after {
+          bottom: 10px;
+          right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    &-about {
+    }
+  }
+}

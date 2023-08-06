@@ -1,0 +1,41 @@
+.swiper-show {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: $orange;
+    color: $white;
+    transition: $all-transitions;
+    border: 1px solid #fff;
+    &:after {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px 0 $orange;
+    }
+  }
+
+  &-left,
+  &-right {
+  }
+
+  &-left {
+    padding-right: 20px;
+  }
+  &-right {
+    padding-left: 20px;
+  }
+
+  &-inner {
+    width: 100%;
+  }
+}

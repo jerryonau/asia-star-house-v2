@@ -1,0 +1,30 @@
+.section {
+  &-menu {
+    .list {
+      .col-md-3 {
+        display: flex;
+      }
+      &-item {
+        flex: 1 1 auto;
+        transition: all 1s ease-in-out;
+        &-content {
+          h5 {
+            font-weight: 600;
+            color: $primary;
+          }
+          p {
+            color: #fff;
+            color: #aaaaaa;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    &-menu {
+    }
+  }
+}

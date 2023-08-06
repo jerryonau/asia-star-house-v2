@@ -1,0 +1,149 @@
+.list {
+  &-item {
+    display: flex;
+    flex-direction: column;
+    transition: $all-transitions;
+
+    &-thumb {
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: $all-transitions;
+      }
+
+      &-front {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+      }
+    }
+
+    &-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary;
+      color: $white;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+
+    &-content {
+      h3 {
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        font-family: var(--font-family-sans-serif);
+      }
+      h5 {
+        margin-top: 0.5rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: var(--font-family-sans-serif);
+      }
+    }
+
+    &:hover {
+      .list-item-thumb {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &:hover,
+    &.active {
+    }
+  }
+
+  .col-12 {
+    $colors: (
+      "red": #ff0000,
+      "green": #00ff00,
+      "blue": #0000ff,
+      "yellow": #d4d400,
+      "orange": #ffa500,
+      "purple": #800080,
+      "pink": #ffc0cb,
+      "brown": #a52a2a,
+      "gray": #808080,
+    );
+    $i: 0;
+    @each $name, $color in $colors {
+      $i: $i + 1;
+      &:nth-child(#{$i}) {
+        .list-item-icon {
+          background-color: $color;
+        }
+      }
+    }
+  }
+
+  &-qs {
+    &-item {
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      h2 {
+        position: relative;
+        padding: 20px 0;
+        margin-bottom: 0;
+        font-family: var(--font-family-sans-serif);
+        color: $primary;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: $all-transitions;
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 16px;
+          height: 4px;
+          background: $primary;
+          border-radius: 2px;
+          transition: $all-transitions;
+        }
+
+        &::before {
+          transform: translateY(-50%) rotate(90deg);
+        }
+      }
+      p {
+        margin: 20px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      &-content {
+        border-top: 1px solid #ddd;
+        display: none;
+      }
+
+      &.active {
+        border-bottom: 0;
+        h2 {
+          &::before {
+            transform: translateY(-50%) rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+}

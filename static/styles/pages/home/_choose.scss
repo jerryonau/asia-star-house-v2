@@ -1,0 +1,45 @@
+.section {
+  &-choose {
+    .list {
+      .col-md-4 {
+        display: flex;
+      }
+      &-item {
+        flex: 1 1 auto;
+        padding: 50px 30px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        background: #1a1814;
+        transition: all 1s ease-in-out;
+        &-content {
+          h5 {
+            font-weight: 600;
+            color: $primary;
+          }
+          p {
+            color: #fff;
+            margin-top: 20px;
+            color: #aaaaaa;
+          }
+        }
+
+        &:hover {
+          background: $primary;
+          padding-top: 20px;
+          .list-item-content {
+            h5,
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    &-choose {
+    }
+  }
+}

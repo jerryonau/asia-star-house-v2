@@ -1,0 +1,32 @@
+.footer {
+  margin: 0;
+  background-color: #171717;
+  color: #fff;
+  a,
+  h3 {
+    color: #fff;
+    &:hover {
+      color: $primary;
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+  }
+  p {
+    line-height: 2;
+  }
+  .copyright {
+    padding-top: 20px;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+  }
+}

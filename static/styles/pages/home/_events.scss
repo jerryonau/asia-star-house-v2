@@ -1,0 +1,21 @@
+.section {
+  &-events {
+    background-image: url("../images/home/section-events.jpg");
+    .carousel-indicators {
+      position: relative;
+      z-index: 3;
+    }
+    .price {
+      border-bottom: 2px solid $primary;
+      width: fit-content;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    &-events {
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &-overlay {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: #000, $alpha: 0.5);
+    }
+
+    &-dark {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000, $alpha: 0.8);
+      }
+    }
+    &-light {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #fff, $alpha: 0.1);
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 20px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      text-transform: capitalize;
+      color: $primary;
+    }
+
+    &-secondary {
+      letter-spacing: 2px;
+      text-transform: uppercase !important;
+      color: #aaaaaa !important;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 14px;
+      font-weight: 500 !important;
+      &::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 4px 10px;
+      }
+    }
+  }
+
+  &-bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

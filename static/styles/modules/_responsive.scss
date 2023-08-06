@@ -1,0 +1,62 @@
+@media (max-width: 1024px) {
+  .swiper-show {
+    &-left,
+    &-right {
+      display: none;
+    }
+  }
+
+  .footer {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    &-banner {
+      text-align: center;
+      padding-top: 100px;
+      h1 {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      &-right {
+        padding-top: 0;
+        img {
+          transform: translateY(0);
+        }
+      }
+    }
+    &-choose {
+      .choose-item {
+        justify-content: flex-start;
+      }
+    }
+
+    &-call {
+      .row {
+        .col-md-3 {
+          text-align: center;
+        }
+      }
+    }
+
+    &-case {
+      .carousel {
+        .container {
+          width: 80%;
+        }
+      }
+    }
+
+    &-clients {
+    }
+  }
+
+  .enquiry {
+    .formbox {
+      width: 100%;
+    }
+  }
+}
