@@ -462,7 +462,7 @@ h4,
 h5,
 h6 {
   /* font-family: "Playfair Display", serif;*/
-  font-family: "PT Mono", monospace;
+  font-family: "Rajdhani", monospace;
   font-weight: 600;
 }
 
@@ -698,6 +698,7 @@ img {
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
+  font-family: "PT mono";
 }
 .btn-primary:hover {
   background-color: #bd8d3b;
@@ -710,6 +711,7 @@ img {
   border-width: 2px;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "PT mono";
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -1237,6 +1239,7 @@ img {
 .header-navbar .nav-item .nav-link {
   text-transform: capitalize;
   font-weight: 400;
+  font-family: "PT mono";
   padding-left: 0;
   padding-right: 0;
 }
@@ -1689,7 +1692,7 @@ img {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
+  font-family: "PT mono", sans-serif;
 }
 .section-contact .list-unstyled p {
   padding: 0 0 0 60px;
