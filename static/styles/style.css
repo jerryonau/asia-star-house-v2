@@ -461,7 +461,7 @@ h4,
 h5,
 h6 {
   /* font-family: "Playfair Display", serif;*/
-  font-family: "PT mono", monospace;
+  font-family: "Poppins", monospace;
   font-weight: 600;
 }
 
@@ -692,12 +692,12 @@ img {
 }
 
 .btn-primary {
-  background-color: #cda45e;
+  background-color: transparent;
   border-color: #cda45e;
   color: #fff;
   text-transform: capitalize;
-  font-weight: 600;
-  font-family: "PT mono";
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 .btn-primary:hover {
   background-color: #bd8d3b;
@@ -709,8 +709,8 @@ img {
   border-color: #cda45e;
   border-width: 2px;
   text-transform: uppercase;
-  font-weight: 600;
-  font-family: "PT mono";
+  /* font-weight: 600; */
+  font-family: "Open Sans", sans-serif;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -1237,11 +1237,14 @@ img {
 }
 .header-navbar .nav-item .nav-link {
   text-transform: capitalize;
-  font-weight: 400;
-  font-family: "PT mono";
+  font-family: "Open Sans", sans-serif;
   padding-left: 0;
   padding-right: 0;
+  font-size: 14px;
 }
+
+
+
 .header-navbar .nav-item:last-child .dropdown-menu {
   left: unset;
   right: 0;
@@ -1422,7 +1425,7 @@ img {
   font-size: 48px;
   font-weight: 700;
   /*  font-family: "Playfair Display", serif; */
-  font-family: "PT Mono", monospace;
+  font-family: "Poppins", monospace;
 }
 .section-banner h1 span {
   color: #cda45e;
@@ -1430,7 +1433,7 @@ img {
 .section-banner h3 {
   color: #fff;
   /*   font-family: "Playfair Display", serif; */
-  font-family: "PT Mono", monospace;
+  font-family: "Poppins", monospace;
 }
 
 @media (max-width: 1024px) {
@@ -1691,7 +1694,7 @@ img {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
-  font-family: "PT mono", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .section-contact .list-unstyled p {
   padding: 0 0 0 60px;
@@ -1704,3 +1707,31 @@ img {
 } /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
+
+
+#home-banner .btns {
+  margin-top: 30px;
+}
+
+#home-banner .btn-menu, #home-banner .btn-book {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #cda45e;
+}
+
+#home-banner .btn-menu:hover, #home-banner .btn-book:hover {
+  background: #cda45e;
+  color: #fff;
+}
+
+#home-banner .btn-book {
+  margin-left: 15px;
+}
