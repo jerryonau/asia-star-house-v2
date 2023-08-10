@@ -1735,3 +1735,9 @@ img {
 #home-banner .btn-book {
   margin-left: 15px;
 }
+
+
+iframe {
+  height: 500px;
+  filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
