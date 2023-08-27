@@ -1,9 +1,11 @@
 .footer {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   background-color: #171717;
   color: #fff;
   a,
   h3 {
+    
     color: #fff;
     &:hover {
       color: $primary;
